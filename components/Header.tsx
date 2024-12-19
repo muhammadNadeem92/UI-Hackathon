@@ -3,8 +3,6 @@ import { CiSearch } from 'react-icons/ci'
 import { LuShoppingCart } from 'react-icons/lu'
 import { PiUserCircleBold } from 'react-icons/pi'
 import { RxCross2 } from 'react-icons/rx'
-import { Button } from './ui/button'
-import Image from 'next/image'
 
 const UpperHeader = () => {
   return (
