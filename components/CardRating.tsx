@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { Button } from './ui/button';
 
 const NewArrivals = () => {
   const products = [
@@ -38,6 +39,7 @@ const NewArrivals = () => {
   ];
 
   return (
+    <div>
     <div className="max-w-7xl mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold text-center mb-8">NEW ARRIVALS</h2>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-6">
@@ -87,6 +89,12 @@ const NewArrivals = () => {
           );
         })}
       </div>
+    </div>
+    <Button variant={'outline'} size={'xl'} className='ml-24 sm:hidden'>View All</Button>
+         <Button variant={'outline'} size={'xl2'} className=' sm:block text-center ml-[724px]'>View All</Button>
+        {/* divider */}
+         <div className='w-[547px] ml-4 mt-10 border border-[#0000001A] sm:w-[1205px]  sm:border sm:border-[#0000001A] sm:ml-16 sm:mt-16 lg:w-[1450px]'></div>
+
     </div>
   );
 };

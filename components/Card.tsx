@@ -12,11 +12,12 @@ const ProductCard = () => {
 
   return (
     <>
+    <div className="sm:flex flex-col  ">
       <div className="max-w-sm bg-white p-6 rounded-lg  text-left">
         <h1 className="w-[243px] h-14 text-2xl font-bold mb-2 sm:w-[600px] sm:h-12 sm:text-[40px]">
           ONE LIFE GRAPHIC T-SHIRT
         </h1>
-        <div className="flex items-center mb-3">
+        <div className="flex items-center mb-3 ">
           <div className="flex">
             <i className="text-yellow-500 text-lg">&#9733;</i>
             <i className="text-yellow-500 text-lg">&#9733;</i>
@@ -38,13 +39,14 @@ const ProductCard = () => {
           soft and breathable fabric, it offers superior comfort and style.
         </p>
         {/* divider */}
-        <div className="w-[424px] h-0 border mt-16 sm:mt-12 sm:w-[540px] sm:ml-1 "></div>
+        <div className="w-[424px] h-0 border mt-16 sm:mt-8 sm:w-[540px] sm:ml-1 "></div>
       </div>
-      <div className="w-[142px] h-16 ml-4 sm:mt-72 sm:text-left  ">
+      <div className="w-[142px] h-16 ml-4  sm:text-left sm:ml-6  ">
         <p className="text-sm w-[82px] h-[10px] text-[#00000099] sm:w-[92px] sm:h-[11px]  ">
           Select Colors
         </p>
         <div className="w-[142px] h-auto flex gap-3 mt-6 sm:">
+          
           <div className="w-[39px] h-[39px] rounded-full bg-[#4f4631] sm:w-[37px] sm:h-[37px]">
             <IoIosCheckmark className="text-white  text-center w-4 h-4 mt-[10px] ml-[10px]" />
           </div>
@@ -54,13 +56,13 @@ const ProductCard = () => {
       </div>
 
       {/* divider */}
-      <div className="w-[424px] h-0 border mt-5 ml-4 sm:mt-12 sm:w-[540px] sm:ml-1 "></div>
+      <div className="w-[424px] h-0 border mt-5 ml-4 sm:mt-6 sm:w-[540px] sm:ml-6 "></div>
       {/* option section */}
-      <div className="mt-4 ml-4">
+      <div className="mt-4 ml-6">
         <p className="w-[76px] h-[10px] text-sm text-[#00000099]">
           Choose Size
         </p>
-        <div className=" mt-10 flex gap-3 ml-2 ">
+        <div className=" mt-6 flex gap-3  ">
           <Button variant={"secondary"} size={"lg"}>
             Small
           </Button>
@@ -76,7 +78,7 @@ const ProductCard = () => {
         </div>
       </div>
       {/* divider */}
-      <div className="w-[424px] h-0 border mt-5 ml-4 sm:mt-12 sm:w-[540px] sm:ml-1"></div>
+      <div className="w-[424px] h-0 border mt-5 ml-4 sm:mt-6 sm:w-[540px] sm:ml-6"></div>
       {/* counter */}
       <div className="flex gap-4">
       <div className="flex items-center justify-center border rounded-3xl p-2 mt-6 ml-4 bg-gray-100 w-fit">
@@ -88,24 +90,25 @@ const ProductCard = () => {
         </button>
         <span className="mx-4 text-lg">{count}</span>
         <button
-          className="text-xl font-bold px-3 py-1 hover:bg-gray-200 rounded"
+          className="text-xl font-bold px-3 py-1 hover:bg-gray-200 rounded-full sm:px-6 "
           onClick={handleIncrement}
         >
           +
         </button>
       </div>
-      <Button variant={'default'} size={'xmd'} className="mt-6">Add to Card</Button>
+      <Button variant={'default'} size={'xmd'} className="mt-6 rounded-full sm:px-[150px]  ">Add to Card</Button>
       </div>
-      <div>
+
         {/* tabs */}
-        <div>
-          <Button variant={'ghost'} className="text-[#00000099] mt-6 ml-4 hover:underline">Product Details</Button>
-          <Button variant={'ghost'} className="text-[#00000099] mt-6 ml-4 hover:underline">Rating & Reviews</Button>
-          <Button variant={'ghost'} className="text-[#00000099] mt-6 ml-4 hover:underline">FAQs</Button>
-          <div className="w-[425px] h-0 border mt-5 ml-4"></div>
-        </div>
+        <div className="sm:hidden ">
+          <Button variant={'ghost'} className="text-[#00000099] mt-6 ml-4 hover:underline sm:hidden  ">Product Details</Button>
+          <Button variant={'ghost'} className="text-[#00000099] mt-6 ml-4 hover:underline sm:hidden ">Rating & Reviews</Button>
+          <Button variant={'ghost'} className="text-[#00000099] mt-6 ml-4 hover:underline sm:hidden ">FAQs</Button>
+          </div>
+
+          <div className="w-[425px] h-0 border mt-5 ml-4 sm:hidden"></div>
         
-        <div className="flex">
+        <div className="flex sm:hidden  ">
         <p className="w-[107px] h-[27px] mt-4 ml-4 font-bold text-xl">All Reviews</p>
         <p className="w-[29px] h-[10px] mt-5 ml-1 text-sm text-[#00000099]">(451)</p>
         <div className="flex ml-[114px] mt-4">

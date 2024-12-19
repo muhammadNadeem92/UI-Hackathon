@@ -7,7 +7,7 @@ const Hero = () => {
     <div>
       {/* section  */}
 
-      <div className="w-[514px] h-[853px] pt-2 mt-6 bg-[#F2F0F1] sm:hidden">
+      <div className="w-full h-[853px] pt-2  mt-6 bg-[#F2F0F1] sm:hidden">
         <section>
           <p className="w-[315px] h-[93px] mt-12 ml-4 font-bold text-4xl">
             FIND CLOTHES THAT MATCHES YOUR STYLE
@@ -20,7 +20,7 @@ const Hero = () => {
           <Button variant={"default"} size={"xl"} className="mt-24 ml-4">
             Shop Now
           </Button>
-          <div className="w-[287px] h-[52pd] ml-20 mt-5 flex justify-between">
+          <div className="w-[287px] h-[52px] ml-20 mt-5 flex justify-between">
             <span className="w-[106px] h-12">
               <p className="font-bold text-2xl w-[88px] h-[32px]  text-[#00000099]">
                 2,000+
@@ -44,14 +44,14 @@ const Hero = () => {
           <Image
             src={"/images/hero-image (3).svg"}
             alt="hero-image"
-            width={490}
+            width={596}
             height={448}
             className="bg-[#F2F0F1]"
           />
         </section>
       </div>
 
-      <section className="w-full mt-[15px] h-[200px] bg-black flex  gap-8 flex-wrap sm:hidden">
+      <section className=" mt-40 h-[200px] bg-black flex  gap-8 flex-wrap sm:hidden">
         <Image
           src={"/images/group.svg"}
           alt="logo"
@@ -124,7 +124,7 @@ const Hero = () => {
       </div>
       </section>
      
-     <section className=" hidden sm:w-full h[122px] sm:py-8 bg-black sm:flex justify-between">
+     <section className=" hidden sm:w-full h-[122px] sm:py-8 bg-black sm:flex justify-between">
      <Image
           src={"/images/group.svg"}
           alt="logo"
