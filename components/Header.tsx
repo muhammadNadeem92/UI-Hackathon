@@ -1,3 +1,4 @@
+import { Link } from 'lucide-react'
 import React from 'react'
 import { CiSearch } from 'react-icons/ci'
 import { LuShoppingCart } from 'react-icons/lu'
@@ -26,8 +27,10 @@ const UpperHeader = () => {
         <div className='w-[421px] h-[22px] flex mt-3 gap-6'>
           <ul className='flex items-center gap-3'>
             <select className='w-[67px] h-[22px] cursor-pointer'>
-              <option value="Shop">Shop</option>
-            </select>
+              <option value="Shop"><Link href='/'>Shop</Link></option>
+              <option value="product-detail-page"><Link href='/product-detail-page'>Product-detail-page</Link></option>
+              <option value="catagory"><Link href='/catagory'>Product-detail-page</Link></option>
+              </select>
             <li className='cursor-pointer'>On Sale</li>
             <li className='cursor-pointer'>New Arrivals</li>
             <li className='cursor-pointer'>Brands</li>
