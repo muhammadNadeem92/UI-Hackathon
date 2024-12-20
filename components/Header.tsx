@@ -53,7 +53,7 @@ const UpperHeader = () => {
 
       {/* Mobile Navigation */}
       <div className='flex gap-2 mr-4 sm:hidden'>
-        <p className='w-6 h-6 mt-[54px] ml-4 text-2xl cursor-pointer'>&#8801;</p>
+        <p className='w-6 h-6 mt-[54px] ml-4 text-2xl cursor-pointer'>&#8801;</p>   
         <p className='w-[126px] h-[18px] mt-[54px] font-bold text-[25.2px] cursor-pointer'>
           SHOP.CO
         </p>

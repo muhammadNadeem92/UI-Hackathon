@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const products = [
   { id: 1, name: 'Gradient Graphic T-shirt', rating: 3.5, price: 145, image: '/images/proImage1.svg' },
@@ -35,10 +36,12 @@ const ProductGrid = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {products.slice(0, cardCount).map((product) => (
           <div key={product.id} className="border p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
-            <img
+            <Image
               src={product.image}
               alt={product.name}
-              className="w-full h-40 object-cover rounded-md"
+              width={190}
+              height={130}
+              className=" object-cover rounded-md"
             />
             <h3 className="mt-2 text-sm font-semibold text-gray-800">{product.name}</h3>
             <div className="flex items-center mt-1 text-yellow-500">

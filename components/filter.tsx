@@ -3,11 +3,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import {
   Sheet,
-  SheetClose,
+
   SheetHeader,
   SheetContent,
   SheetTitle,
@@ -16,13 +15,11 @@ import {
 
 const SHEET_SIDES = ["left"] as const;
 
-type SheetSide = (typeof SHEET_SIDES)[number];
 
 const FilterComponent = () => {
   const [price, setPrice] = useState(200);
   const [selectedColor, setSelectedColor] = useState("");
   const [selectedSize, setSelectedSize] = useState("Large");
-  const [selectedDressStyle, setSelectedDressStyle] = useState("");
 
   const colors = [
     { name: "green", code: "bg-green-500" },
@@ -146,7 +143,6 @@ const FilterComponent = () => {
                         type="radio"
                         name="dressStyle"
                         value={style}
-                        onChange={() => setSelectedDressStyle(style)}
                         className="form-radio text-black"
                       />
                       <span className="ml-2">{style}</span>

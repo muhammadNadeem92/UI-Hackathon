@@ -33,7 +33,7 @@ const FilterSidebar = () => {
           min="100"
           max="800"
           value={price}
-          onChange={(e) => setPrice(300)}
+          onChange={() => setPrice(300)}
           className="w-full"
         />
         <div className="flex justify-between text-sm">

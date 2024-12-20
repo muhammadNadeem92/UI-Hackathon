@@ -55,7 +55,7 @@ const CustomerReviews = ({ reviews = reviewsData }) => {
               <span className="font-semibold text-gray-900">{review.name}</span>
               <FaCheckCircle className="mt-1 text-green-700"/>
               </div>
-              <p className="text-gray-700 italic mb-4">"{review.review}"</p>
+              <p className="text-gray-700 italic mb-4">{review.review}</p>
             </div>
           </SwiperSlide>
         ))}

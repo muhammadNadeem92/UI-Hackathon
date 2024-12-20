@@ -61,7 +61,7 @@ const ReviewCard = () => {
             <h3 className="font-bold text-gray-800 mb-2">{review.name}</h3>
             {/* Review Text */}
             <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-              "{review.text}"
+              {review.text}
             </p>
             {/* Date */}
             <p className="text-gray-400 text-xs">Posted on {review.date}</p>
@@ -88,7 +88,7 @@ const ReviewCard = () => {
             <h3 className="font-bold text-gray-800 mb-2">{review.name}</h3>
             {/* Review Text */}
             <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-              "{review.text}"
+              {review.text}
             </p>
             {/* Date */}
             <p className="text-gray-400 text-xs">Posted on {review.date}</p>
