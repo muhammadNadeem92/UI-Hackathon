@@ -12,7 +12,7 @@ const Hero = () => {
           <p className="w-[315px] h-[93px] mt-12 ml-4 font-bold text-4xl">
             FIND CLOTHES THAT MATCHES YOUR STYLE
           </p>
-          <p className="w-[358px] h-[50px] pt-11 text-sm ml-4 text-[#00000099]">
+          <p className="w-[358px] h-[50px] pt-11 text-xs ml-4 text-[#00000099]">
             Browse through our diverse range of meticulously crafted garments,
             designed to bring out your individuality and cater to your sense of
             style.
@@ -20,7 +20,7 @@ const Hero = () => {
           <Button variant={"default"} size={"xl"} className="mt-24 ml-4">
             Shop Now
           </Button>
-          <div className="w-[287px] h-[52px] ml-20 mt-5 flex justify-between">
+          <div className="w-[287px] h-[52px] ml-12 mt-5 flex justify-between">
             <span className="w-[106px] h-12">
               <p className="font-bold text-2xl w-[88px] h-[32px]  text-[#00000099]">
                 2,000+
@@ -44,7 +44,7 @@ const Hero = () => {
           <Image
             src={"/images/hero-image (3).svg"}
             alt="hero-image"
-            width={596}
+            width={448}
             height={448}
             className="bg-[#F2F0F1]"
           />
@@ -170,6 +170,3 @@ const Hero = () => {
 
 export default Hero;
 
-{
-  /* <div className=" w-full h-[663px] mt-16 relative  bg-[#f2f0f1] "></div> */
-}

@@ -2,46 +2,46 @@ import Image from 'next/image';
 import React from 'react';
 import { Button } from './ui/button';
 
-const TopSelling = () => {
+const NewArrivals = () => {
   const products = [
     {
       id: 1,
-      name: "VERTICAL STRIPED SHIRT",
-      price: 212,
-      originalPrice: 232,
-      image: "/images/vertical shirt.svg",
-      rating: 3.5,
-    },
-    {
-      id: 2,
-      name: "COURAGE GRAPHIC T-SHIRT",
-      price: 145,
-      originalPrice: null,
-      image: "/images/graphic-t-shirt.svg",
+      name: "T-shirt with Tape Details",
+      price: 200,
+      originalPrice: 250,
+      image: "/images/T-Shirt.svg",
       rating: 4.5,
     },
     {
+      id: 2,
+      name: "Skinny Fit Jeans",
+      price: 240,
+      originalPrice: 260,
+      image: "/images/Fit-Jeans.svg",
+      rating: 4.6,
+    },
+    {
       id: 3,
-      name: "LOOSE FIT BERMUDA SHORTS",
-      price: 80,
+      name: "Checkered Shirt",
+      price: 180,
       originalPrice: null,
-      image: "/images/loose-fit-shorts.svg",
-      rating: 2.5,
+      image: "/images/shirt.svg",
+      rating: 4.4,
     },
     {
       id: 4,
-      name: "FADED SKINNY JEANS",
-      price: 210,
-      originalPrice: null,
-      image: "/images/skinny-jeans.svg",
-      rating: 4.8,
+      name: "Sleeve Striped T-shirt",
+      price: 130,
+      originalPrice: 140,
+      image: "/images/Sleeve-T-Shirt.svg",
+      rating: 4.3,
     },
   ];
 
   return (
     <div>
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-center mb-8">TOP SELLING</h2>
+      <h2 className="text-3xl font-bold text-center mb-8">NEW ARRIVALS</h2>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-6">
         {products.map((product, index) => {
           // Calculate discount percentage if original price exists
@@ -63,25 +63,23 @@ const TopSelling = () => {
                 height={600}
                 className="h-40 w-full object-cover mb-4 rounded"
               />
-              <h3 className="text-sm font-medium text-left sm:text-xl">
+              <h3 className="text-base font-medium text-left sm:text-lg">
                 {product.name}
               </h3>
-              <div className="flex items-center text-sm my-2 text-left">
-                {/* Rating */}
-                <span className="text-yellow-500">
-                  {"⭐".repeat(Math.floor(product.rating))}{" "}
-                  {product.rating.toFixed(1)}
-                </span>
-               
+              <div className="text-yellow-500 text-sm my-2 text-left">
+                {"⭐".repeat(Math.floor(product.rating))}{" "}
+                {product.rating.toFixed(1)}
               </div>
-              <div className="text-lg font-bold text-left">
-                ${product.price}{" "}
+              <div className="text-lg font-bold text-left flex items-center space-x-2">
+                {/* Product Price */}
+                <span>${product.price}</span>
+                {/* Original Price and Discount */}
                 {product.originalPrice && (
                   <>
                     <span className="line-through text-gray-500 text-sm">
                       ${product.originalPrice}
                     </span>
-                    <span className=" ml-2 text-red-500 bg-red-100 rounded-3xl py-[6px] px-[14px] text-sm font-bold">
+                    <span className="text-red-500 bg-red-100 rounded-3xl py-[6px] px-[14px] text-sm font-bold">
                       -{discountPercentage}% 
                     </span>
                   </>
@@ -92,11 +90,13 @@ const TopSelling = () => {
         })}
       </div>
     </div>
-    <Button variant={'outline'} size={'xl'} className='ml-24 sm:hidden'>View All</Button>
-    <Button variant={'outline'} size={'xl2'} className='hidden sm:block sm:text-center ml-[724px]'>View All</Button>
+    <Button variant={'outline'} size={'xl'} className='ml-11 sm:hidden'>View All</Button>
+         <Button variant={'outline'} size={'xl2'} className=' sm:block text-center ml-[724px]'>View All</Button>
+        {/* divider */}
+         <div className='w-full ml-4 mt-10 border border-[#0000001A] sm:w-full  sm:border sm:border-[#0000001A]  sm:mt-16 md:w-[1200px] md:ml-16'></div>
 
     </div>
   );
 };
 
-export default TopSelling;
+export default NewArrivals;

@@ -1,4 +1,5 @@
-import { Link } from 'lucide-react'
+
+import Link from 'next/link'
 import React from 'react'
 import { CiSearch } from 'react-icons/ci'
 import { LuShoppingCart } from 'react-icons/lu'
@@ -8,8 +9,8 @@ import { RxCross2 } from 'react-icons/rx'
 const UpperHeader = () => {
   return (
     <div>
-      <header className='w-full h-[34px] bg-black flex pt-2 sm:w-full sm:h-[38px]'>
-        <p className='w-[450px] h-4 text-xs text-white ml-11 cursor-default sm:w-[351px] sm:h-[19px] sm:ml-[450px] sm:text-base'>
+      <header className='w-full h-[34px] bg-black flex pt-2 sm:h-[38px]'>
+        <p className='w-[450px] h-4 text-xs text-white ml-11 cursor-default sm:w-[351px] sm:h-[19px] sm:ml-[450px] text-center sm:text-base'>
           Sign up and get 20% off to your first order.
         </p>
         <span className='w-[350px] h-4 font-medium text-xs text-white underline cursor-pointer sm:text-sm sm:w-[100px] sm:mr-[460px] sm:h-[38px]'>
@@ -21,16 +22,17 @@ const UpperHeader = () => {
       {/* Second header part */}
       <header className='hidden sm:w-[1140px] h-[41px] pt-[62px] ml-[100px] sm:flex gap-11'>
         <p className='w-[160px] h-[22px] font-bold text-[32px] text-black cursor-pointer'>
-          SHOP.CO
+        <Link href= {'/'}>SHOP.CO</Link>  
         </p>
 
         <div className='w-[421px] h-[22px] flex mt-3 gap-6'>
+         
           <ul className='flex items-center gap-3'>
             <select className='w-[67px] h-[22px] cursor-pointer'>
-              <option value="Shop"> <Link href='/'>Shop</Link></option>
+              <option value="Shop">Shop</option>
             </select>
-            <li className='cursor-pointer'><Link href='/product-detail-page'>On Sale</Link></li>
-            <li className='cursor-pointer'><Link href='/catagory'>New Arrivals</Link></li>
+            <li className='cursor-pointer'>On Sell</li>
+            <li className='cursor-pointer'>New Arrivals</li>
             <li className='cursor-pointer'>Brands</li>
           </ul>
         </div>

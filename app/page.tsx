@@ -1,18 +1,18 @@
 import BrowesStyle from '@/components/BrowesStyle'
-import CardRating from '@/components/CardRating'
-import CardRating2 from '@/components/CardRating2'
 import CustomerReviews from '@/components/CustomerReviews'
 import Hero from '@/components/Hero'
 import React from 'react'
+import NewArrivals from '@/components/newArrivals'
+import TopSelling from '@/components/topSelling'
 
 const HomePage = () => {
   return (
     <div>
          <Hero />
-         <CardRating />
-         <CardRating2 />
+         <NewArrivals />
+         <TopSelling />
          <BrowesStyle />      
-          <CustomerReviews />
+         <CustomerReviews />
 
     </div>
   )

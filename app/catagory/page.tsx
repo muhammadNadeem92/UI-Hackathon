@@ -5,7 +5,7 @@ import ProductGrid from '@/components/Product'
 import FilterSidebar from '@/components/FilterSidebar'
 
 
-const page = () => {
+const catagory = () => {
   return (
     <div>
                 {/* divider */}
@@ -43,4 +43,4 @@ const page = () => {
   )
 }
 
-export default page
+export default catagory

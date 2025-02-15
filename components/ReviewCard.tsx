@@ -70,7 +70,7 @@ const ReviewCard = () => {
       </div>
 
       {/* Large Screen: Display 6 reviews */}
-      <div className="hidden  sm:grid grid-cols-2 gap-6 mr-[378px]">
+      <div className="hidden  sm:grid grid-cols-2 gap-6 ">
         {reviews.slice(0, 6).map((review, index) => (
           <div
             key={index}

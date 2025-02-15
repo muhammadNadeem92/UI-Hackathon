@@ -50,14 +50,14 @@ const ProductDetailPage = () => {
                    <Button variant={'ghost'} className="text-[#00000099] mt-6 ml-4 hover:underline  ">FAQs</Button>
                    </div>
          
-                   <div className="hidden sm:block w-[1240px] h-0 border mt-5 ml-28  "></div>
+                   <div className="hidden sm:block w-[1205px] h-0 border mt-5 ml-24  "></div>
                  
-                 <div className="hidden sm:flex ml-24 w-[1240px] justify-between">
+                 <div className="hidden sm:flex ml-24 w-[1205px] justify-between">
                   <div className='flex'>
                  <p className="w-[107px] h-[27px] mt-4 ml-4 font-bold text-xl">All Reviews</p>
                  <p className="w-[29px] h-[10px] mt-5 ml-1 text-sm text-[#00000099]">(451)</p>
                  </div>
-                 <div className="flex gap-4 mt-4">
+                 <div className="flex gap-4 mt-4 ">
                   <Image src={'/images/filter.svg'} alt="filter-image" width={40} height={40}  className="mr-4"/>
                   <select className='bg-[#F0F0F0] rounded-full px-2'><option value="Latest">Latest</option></select>
                   <Button variant={'default'} size={'default'} >Write a Review</Button>
