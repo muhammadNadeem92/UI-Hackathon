@@ -5,7 +5,7 @@ import { CiSearch } from 'react-icons/ci'
 import { LuShoppingCart } from 'react-icons/lu'
 import { PiUserCircleBold } from 'react-icons/pi'
 import { RxCross2 } from 'react-icons/rx'
-
+import DropdownMenuRadioGroupDemo from './dropDown'
 const UpperHeader = () => {
   return (
     <div>
@@ -28,9 +28,10 @@ const UpperHeader = () => {
         <div className='w-[421px] h-[22px] flex mt-3 gap-6'>
          
           <ul className='flex items-center gap-3'>
-            <select className='w-[67px] h-[22px] cursor-pointer'>
+            {/* <select className='w-[67px] h-[22px] cursor-pointer'>
               <option value="Shop">Shop</option>
-            </select>
+            </select> */}
+            <DropdownMenuRadioGroupDemo />
             <li className='cursor-pointer'>On Sell</li>
             <li className='cursor-pointer'>New Arrivals</li>
             <li className='cursor-pointer'>Brands</li>
