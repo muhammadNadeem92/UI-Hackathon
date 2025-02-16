@@ -30,10 +30,10 @@ const Hero = () => {
               </p>
             </span>
             <span className="w-[106] h-12">
-              <p className="font-bold text-2xl w-16 h-[32px] ml-12  text-[#00000099]">
+              <p className="font-bold text-2xl w-16 h-[32px] ml-6 text-[#00000099]">
                 200+
               </p>
-              <p className="w-[250px] text-xs h-[22px] ml-12 text-[#00000099]">
+              <p className="w-[250px] text-xs h-[22px] ml-6 text-[#00000099]">
                 International Brands
               </p>
             </span>
@@ -51,20 +51,20 @@ const Hero = () => {
         </section>
       </div>
 
-      <section className=" mt-40 h-[200px] bg-black flex  gap-8 flex-wrap sm:hidden">
+      <section className="h-[200px] pt-6 bg-black flex  gap-4 flex-wrap sm:hidden">
         <Image
           src={"/images/group.svg"}
           alt="logo"
           width={116}
           height={23}
-          className="mt-28 ml-4"
+          className="pt-4 ml-4"
         />
         <Image
           src={"/images/zara-logo.svg"}
           alt="logo"
           width={63}
           height={25}
-          className="mt-28 ml-5"
+          className="pt-4  ml-5"
         />
 
         <Image
@@ -72,14 +72,14 @@ const Hero = () => {
           alt="logo"
           width={109}
           height={25}
-          className="mt-28"
+          className="pt-4 "
         />
         <Image
           src={"/images/prada-logo.svg"}
           alt="logo"
           width={127}
           height={21}
-          className="mb-16 ml-14"
+          className="pb-6 ml-14"
         />
 
         <Image
@@ -87,7 +87,7 @@ const Hero = () => {
           alt="logo"
           width={134}
           height={21}
-          className="mb-16"
+          className="pb-6"
         />
       </section>
 
@@ -124,7 +124,7 @@ const Hero = () => {
       </div>
       </section>
      
-     <section className=" hidden sm:w-full h-[122px] sm:py-8 bg-black sm:flex justify-between">
+     <section className=" hidden md:w-full h-[122px] md:py-8 bg-black md:flex justify-between">
      <Image
           src={"/images/group.svg"}
           alt="logo"

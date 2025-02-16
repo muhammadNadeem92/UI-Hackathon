@@ -6,6 +6,8 @@ import { LuShoppingCart } from 'react-icons/lu'
 import { PiUserCircleBold } from 'react-icons/pi'
 import { RxCross2 } from 'react-icons/rx'
 import DropdownMenuRadioGroupDemo from './dropDown'
+import Sidebar  from './Sidebar' 
+
 const UpperHeader = () => {
   return (
     <div>
@@ -28,9 +30,7 @@ const UpperHeader = () => {
         <div className='w-[421px] h-[22px] flex mt-3 gap-6'>
          
           <ul className='flex items-center gap-3'>
-            {/* <select className='w-[67px] h-[22px] cursor-pointer'>
-              <option value="Shop">Shop</option>
-            </select> */}
+         
             <DropdownMenuRadioGroupDemo />
             <li className='cursor-pointer'>On Sell</li>
             <li className='cursor-pointer'>New Arrivals</li>
@@ -56,8 +56,8 @@ const UpperHeader = () => {
       </header>
 
       {/* Mobile Navigation */}
-      <div className='flex gap-2 mr-4 sm:hidden'>
-        <p className='w-6 h-6 mt-[54px] ml-4 text-2xl cursor-pointer'>&#8801;</p>   
+      <div className='flex gap-3 mr-4 sm:hidden'>
+     <Sidebar />
         <p className='w-[126px] h-[18px] mt-[54px] font-bold text-[25.2px] cursor-pointer'>
           SHOP.CO
         </p>

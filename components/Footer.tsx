@@ -8,10 +8,10 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <footer className=" grid grid-cols-1 bg-[#f5f5f5]">
-      <div className="w-auto h-[353px] mt-24 ml-4 mr-4 border rounded-[20px] bg-black  sm:h-[180px] sm:ml-48 sm:mr-28 py-9 px-16 lg:ml-32 lg:px-36 ">
+      <footer className=" grid grid-cols-1 bg-[#f5f5f5] w-full">
+      <div className="w-auto h-[353px] mt-24 ml-4 mr-4 border rounded-[20px] bg-black  md:h-[180px] md:ml-48 md:mr-28 py-9 px-16 lg:ml-32  ">
         <div className=" sm:flex justify-between">
-        <h2 className="w-full h-[105px] mt-4 sm:ml-6 font-bold text-2xl sm:text-4xl text-white sm:w-[500px] sm:h-[94px]  leading-[45px] lg:mr-24">
+        <h2 className="w-full h-[105px] mt-4 md:ml-6 font-bold text-2xl md:text-4xl text-white md:w-[500px] md:h-[94px]  leading-[45px] lg:mr-24">
           STAY UPTO DATE ABOUT OUR LATEST OFFERS
         </h2>
         <div className="flex flex-col mt-10 sm:flex sm:flex-col items-center justify-end sm:mt-3 w-full sm:w-auto"> 
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         </div>
       </div>
-      <section className="w-full    lg:w-ful px-4">
+      <section className="w-full  md:pl-24  lg:w-ful px-4">
   {/* About section */}
   <h3 className="text-2xl font-bold mt-8">SHOP.CO</h3>
   <p className="mt-4 text-xs sm:text-sm text-gray-600">
@@ -49,7 +49,7 @@ const Footer = () => {
   </div>
 
   {/* Links Section */}
-  <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-6">
+  <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
     {/* Company */}
     <ul>
       <p className="font-medium text-black">COMPANY</p>
@@ -88,7 +88,7 @@ const Footer = () => {
   </div>
 
   {/* Divider */}
-  <div className="w-[1200px] mt-8 border-t border-gray-200"></div>
+  <div className="w-full md:w-full  mt-8 border-t border-gray-200"></div>
 
   {/* Footer */}
   <p className="mt-4 text-center text-xs sm:text-sm text-gray-600">

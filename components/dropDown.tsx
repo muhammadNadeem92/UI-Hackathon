@@ -1,8 +1,8 @@
 "use client"
 
 import * as React from "react"
+import { RiArrowDropDownLine } from "react-icons/ri";
 
-import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,17 +20,25 @@ export default function DropdownMenuRadioGroupDemo() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline">Shop</Button>
+        <button>
+          <span className="flex justify-center items-center">
+             Shop  
+          <RiArrowDropDownLine />
+          </span>
+         
+         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuLabel>produsts links</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
-          <DropdownMenuRadioItem value="">Top</DropdownMenuRadioItem>
 
-          <li className="text-sm text-gray-600"><Link href="/catagory" target="_blank">catagory</Link></li>
-      <li className="text-sm text-gray-600"><Link href="/product-detail-page" target="_blank">product-detail-page</Link></li>
-
+        <ul className="p-4">
+          <li><Link href={'/'} className="font-medium text-xl hover:text-indigo-300">Home</Link></li>
+            <li><Link href={'/catagory'} target="_blank" className="font-medium text-xl hover:text-indigo-300">Category</Link></li>
+            <li><Link href={'/product-detail-page'} target="_blank" className="font-medium text-xl hover:text-indigo-300">Product Detail</Link></li>
+            <li><Link href={'/cart'} target="_blank" className="font-medium text-xl hover:text-indigo-300">Cart</Link></li>
+          </ul>
         
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
