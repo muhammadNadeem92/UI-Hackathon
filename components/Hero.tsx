@@ -46,14 +46,14 @@ const Hero = () => {
             alt="hero-image"
             width={448}
             height={448}
-            className="bg-[#F2F0F1]"
+            // className="bg-[#F2F0F1]"
           />
         </section>
       </div>
 
       <section className="h-[200px] pt-6 bg-black flex  gap-4 flex-wrap sm:hidden">
         <Image
-          src={"/images/group.svg"}
+          src={"/images/Group.svg"}
           alt="logo"
           width={116}
           height={23}
@@ -83,7 +83,7 @@ const Hero = () => {
         />
 
         <Image
-          src={"/images/group (1).svg"}
+          src={"/images/Group (1).svg"}
           alt="logo"
           width={134}
           height={21}
@@ -126,7 +126,7 @@ const Hero = () => {
      
      <section className=" hidden md:w-full h-[122px] md:py-8 bg-black md:flex justify-between">
      <Image
-          src={"/images/group.svg"}
+          src={"/images/Group.svg"}
           alt="logo"
           width={116}
           height={23}
@@ -156,7 +156,7 @@ const Hero = () => {
         />
 
         <Image
-          src={"/images/group (1).svg"}
+          src={"/images/Group (1).svg"}
           alt="logo"
           width={134}
           height={21}
